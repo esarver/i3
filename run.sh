@@ -21,29 +21,29 @@ sudo pip install flake8
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Install yaourt
-git clone https://aur.archlinux.org/package-query.git
-cd package-query
-makepkg -si
-cd ..
-git clone https://aur.archlinux.org/yaourt.git
-cd yaourt
-makepkg -si
-cd ..
+#git clone https://aur.archlinux.org/package-query.git
+#cd package-query
+#makepkg -si
+#cd ..
+#git clone https://aur.archlinux.org/yaourt.git
+#cd yaourt
+#makepkg -si
+#cd ..
 
 # Install i3-gaps
-yes | yaourt i3-gaps
-yes | sudo pacman -S i3status feh
-yes | yaourt ttf-material-icons
+#yes | yaourt i3-gaps
+#yes | sudo pacman -S i3status feh
+yes | sudo pacman -S ttf-material-icons
 
 # Set terminal config
-cp .Xresources ~/.
+#cp .Xresources ~/.
 
 # set polybar config
-cp -r polybar ~/.config/.
+#cp -r polybar ~/.config/.
 
 # Set locale
 echo 'export LC_ALL=en_US.utf-8' >> ~/.bashrc
 echo 'export LANG="$LC_ALL"' >> ~/.bashrc
 
 # Set i3status config
-cp ./i3status.conf ~/.
+#cp ./i3status.conf ~/.

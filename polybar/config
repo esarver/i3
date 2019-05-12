@@ -319,7 +319,7 @@ animation-packetloss-framerate = 500
 
 [module/wired-network]
 type = internal/network
-interface = net0
+interface = net2
 interval = 2.0
 
 label-connected =   %local_ip%
